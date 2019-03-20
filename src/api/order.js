@@ -9,12 +9,12 @@
  const order ={
      //竞拍列表
      marketList(page){
-         if(!page){
+         if(page){
              return axios.get(`/cm/market/list/`,{
                  params:{page:page}
              });
          }else{
-             return axios.get('/cm/market/list/');
+             return axios.get(`/cm/market/list/`);
          }
      },
      //竞拍详情

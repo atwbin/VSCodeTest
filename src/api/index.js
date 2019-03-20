@@ -4,12 +4,12 @@
 
 // 文章模块接口
 import order from '@/api/order';
-import user from '@/api/user';
+// import user from '@/api/user';
 
 const version = '1.0.0';
 const components = [
     order,
-    user
+    // user
 ];
 
 const install = Vue => {
@@ -24,7 +24,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export {
     order,
-    user
+    // user
 }
 
 // 导出接口

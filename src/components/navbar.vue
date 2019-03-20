@@ -1,9 +1,12 @@
 <template>
-  <div>
-    <div @click="toList" class="bottom-item" :class="ifarrow=='list'?'bottom-item1':'bottom-item2'"><p>票据列表页</p></div>
-   
-    <div @click="toHome" class="bottom-item" :class="ifarrow=='home'?'bottom-item3':'bottom-item4'"><p>首页面</p></div>
+  <div class="bottom-table clearfix">
+    <div @click="toList" class="bottom-item" :class="ifarrow=='list'?'bottom-item1':'bottom-item2'">
+      <p>票据列表页</p>
+    </div>
 
+    <div @click="toHome" class="bottom-item" :class="ifarrow=='home'?'bottom-item3':'bottom-item4'">
+      <p>首页面</p>
+    </div>
   </div>
 </template>
 
@@ -11,9 +14,9 @@
 export default {
   name: "Footer",
   data() {
-    return {}
+    return {};
   },
-  props: ['ifarrow'],
+  props: ["ifarrow"],
   mounted() {},
   methods: {
     toHome() {
@@ -51,33 +54,33 @@ export default {
     }
   }
   .bottom-item1 {
-    background: url("../assets/images/public/icon_footer1.png")
-      center 10 / @q no-repeat;
+    background: url("../assets/images/public/icon_footer1.png") center 10 / @q
+      no-repeat;
     background-size: 24 / @q 20 / @q;
     p {
       color: #418de6;
     }
   }
   .bottom-item2 {
-    background: url("../assets/images/public/icon_footer2.png")
-      center 10 / @q no-repeat;
-    background-size: 21 / @q 20 / @q;
+    background: url("../assets/images/public/icon_footer2.png") center 10 / @q
+      no-repeat;
+    background-size: 24 / @q 20 / @q;
     p {
       color: #98989d;
     }
   }
   .bottom-item3 {
-    background: url("../assets/images/public/icon_footer3.png")
-      center 10 / @q no-repeat;
+    background: url("../assets/images/public/icon_footer3.png") center 10 / @q
+      no-repeat;
     background-size: 21 / @q 20 / @q;
     p {
       color: #418de6;
     }
   }
   .bottom-item4 {
-    background: url("../assets/images/public/icon_footer4.png")
-      center 10 / @q no-repeat;
-    background-size: 24 / @q 20 / @q;
+    background: url("../assets/images/public/icon_footer4.png") center 10 / @q
+      no-repeat;
+    background-size: 21 / @q 20 / @q;
     p {
       color: #98989d;
     }
@@ -89,3 +92,4 @@ export default {
   }
 }
 </style>
+// 备注   <!-- home 和 list在不通过引入的情况下，也能使用navbar？ -->
